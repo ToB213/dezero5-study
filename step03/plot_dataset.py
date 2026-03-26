@@ -1,0 +1,15 @@
+import numpy as np
+import os
+import matplotlib.pyplot as plt
+
+path = os.path.join(os.path.dirname(__file__), 'height_weight.txt')
+xs = np.loadtxt(path)
+
+print(xs.shape)
+
+# 一部表示
+small_xs = xs[:500]
+plt.scatter(small_xs[:, 0], small_xs[:, 1])
+plt.xlabel('Height(cm)')
+plt.ylabel('Weight(kg)')
+plt.show()
