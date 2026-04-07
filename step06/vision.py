@@ -2,6 +2,8 @@ import torch
 import torchvision
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('module://matplotlib-backend-sixel')
 
 
 dataset = torchvision.datasets.MNIST(
